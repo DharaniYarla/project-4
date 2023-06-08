@@ -1,0 +1,73 @@
+.escalator {
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: black;
+  margin-top: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+
+.escalator img {
+  display: none;
+  height: 80%;
+  width: auto;
+  position: absolute;
+  animation: moveImage linear infinite;
+  animation-duration: 10s;
+  opacity: 0;
+}
+
+@keyframes moveImage {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  15% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  45% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  75% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  90% {
+    transform: translateX(300%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(300%);
+    opacity: 0;
+  }
+}
+
+.escalator img:nth-child(1) {
+  display: block;
+  animation-delay: 0s;
+}
+
+.escalator img:nth-child(2) {
+  display: block;
+  animation-delay: 3s;
+}
+
+.escalator img:nth-child(3) {
+  display: block;
+  animation-delay: 6s;
+}
